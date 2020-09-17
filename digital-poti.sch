@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 28 38
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP4451-103E:MCP4451-103E_ST U?
+U 1 1 5F156D6D
+P 3700 3900
+AR Path="/5F156D6D" Ref="U?"  Part="1" 
+AR Path="/5F1526C5/5F156D6D" Ref="U39"  Part="1" 
+AR Path="/5F15EBB1/5F156D6D" Ref="U?"  Part="1" 
+AR Path="/5F160F98/5F156D6D" Ref="U38"  Part="1" 
+AR Path="/5F16E785/5F156D6D" Ref="U?"  Part="1" 
+AR Path="/5F4B256E/5F156D6D" Ref="U?"  Part="1" 
+F 0 "U39" H 5100 4287 60  0000 C CNN
+F 1 "MCP4451-103E_ST" H 5100 4181 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-20_4.4x6.5mm_Pitch0.65mm" H 5100 4140 60  0001 C CNN
+F 3 "" H 3700 3900 60  0000 C CNN
+	1    3700 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 4850 3300 0    50   ~ 0
+DIGITAL POTI
+Text HLabel 3500 4700 0    40   UnSpc ~ 0
+TEMP1A
+Text HLabel 6750 4000 2    40   UnSpc ~ 0
+TEMP2A
+Text HLabel 6750 4700 2    40   UnSpc ~ 0
+TEMP3A
+Text HLabel 3550 4400 0    50   BiDi ~ 0
+SDA
+Text HLabel 3550 4300 0    50   BiDi ~ 0
+SCL
+Text HLabel 3500 4600 0    40   UnSpc ~ 0
+TEMP1B
+Text HLabel 6750 4100 2    40   UnSpc ~ 0
+TEMP2B
+Text HLabel 6750 4600 2    40   UnSpc ~ 0
+TEMP3B
+Wire Wire Line
+	3550 4300 3700 4300
+Wire Wire Line
+	3550 4400 3700 4400
+Wire Wire Line
+	3500 4600 3700 4600
+Wire Wire Line
+	3500 4700 3700 4700
+NoConn ~ 3700 4800
+Wire Wire Line
+	6500 4000 6750 4000
+Wire Wire Line
+	6500 4100 6750 4100
+NoConn ~ 6500 3900
+NoConn ~ 6500 4800
+Wire Wire Line
+	6500 4600 6750 4600
+Wire Wire Line
+	6500 4700 6750 4700
+$Comp
+L power:GND #PWR0410
+U 1 1 5F2F2863
+P 3000 4800
+AR Path="/5F1526C5/5F2F2863" Ref="#PWR0410"  Part="1" 
+AR Path="/5F160F98/5F2F2863" Ref="#PWR0406"  Part="1" 
+F 0 "#PWR0410" H 3000 4550 50  0001 C CNN
+F 1 "GND" H 3005 4627 50  0000 C CNN
+F 2 "" H 3000 4800 50  0001 C CNN
+F 3 "" H 3000 4800 50  0001 C CNN
+	1    3000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4800 3000 4500
+Wire Wire Line
+	3000 4500 3700 4500
+NoConn ~ 3700 3900
+NoConn ~ 3700 4000
+NoConn ~ 3700 4100
+Wire Wire Line
+	3700 4200 3550 4200
+Wire Wire Line
+	3550 4200 3550 3550
+Wire Wire Line
+	3550 3550 3100 3550
+Wire Wire Line
+	6500 4300 7200 4300
+Wire Wire Line
+	7200 4300 7200 3400
+Wire Wire Line
+	7200 3400 3100 3400
+$Comp
+L power:+3V3 #PWR0413
+U 1 1 5F2F3CED
+P 7450 3700
+AR Path="/5F1526C5/5F2F3CED" Ref="#PWR0413"  Part="1" 
+AR Path="/5F160F98/5F2F3CED" Ref="#PWR0409"  Part="1" 
+F 0 "#PWR0413" H 7450 3550 50  0001 C CNN
+F 1 "+3V3" H 7465 3873 50  0000 C CNN
+F 2 "" H 7450 3700 50  0001 C CNN
+F 3 "" H 7450 3700 50  0001 C CNN
+	1    7450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3700 7450 3750
+Wire Wire Line
+	7450 4200 6500 4200
+$Comp
+L Device:R R287
+U 1 1 5F2F578F
+P 7700 4050
+AR Path="/5F1526C5/5F2F578F" Ref="R287"  Part="1" 
+AR Path="/5F160F98/5F2F578F" Ref="R286"  Part="1" 
+F 0 "R287" H 7770 4096 50  0000 L CNN
+F 1 "10k" H 7770 4005 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 7630 4050 50  0001 C CNN
+F 3 "~" H 7700 4050 50  0001 C CNN
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3750 7700 3750
+Wire Wire Line
+	7700 3750 7700 3900
+Connection ~ 7450 3750
+Wire Wire Line
+	7450 3750 7450 4200
+Wire Wire Line
+	6500 4400 7700 4400
+Wire Wire Line
+	7700 4400 7700 4200
+$Comp
+L power:+3V3 #PWR0411
+U 1 1 5F2F6E5B
+P 5100 5250
+AR Path="/5F1526C5/5F2F6E5B" Ref="#PWR0411"  Part="1" 
+AR Path="/5F160F98/5F2F6E5B" Ref="#PWR0407"  Part="1" 
+F 0 "#PWR0411" H 5100 5100 50  0001 C CNN
+F 1 "+3V3" H 5115 5423 50  0000 C CNN
+F 2 "" H 5100 5250 50  0001 C CNN
+F 3 "" H 5100 5250 50  0001 C CNN
+	1    5100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0412
+U 1 1 5F2F7438
+P 5100 5750
+AR Path="/5F1526C5/5F2F7438" Ref="#PWR0412"  Part="1" 
+AR Path="/5F160F98/5F2F7438" Ref="#PWR0408"  Part="1" 
+F 0 "#PWR0412" H 5100 5500 50  0001 C CNN
+F 1 "GND" H 5105 5577 50  0000 C CNN
+F 2 "" H 5100 5750 50  0001 C CNN
+F 3 "" H 5100 5750 50  0001 C CNN
+	1    5100 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C205
+U 1 1 5F2F7A4E
+P 5100 5500
+AR Path="/5F1526C5/5F2F7A4E" Ref="C205"  Part="1" 
+AR Path="/5F160F98/5F2F7A4E" Ref="C202"  Part="1" 
+F 0 "C205" H 5215 5546 50  0000 L CNN
+F 1 "10n" H 5215 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5138 5350 50  0001 C CNN
+F 3 "~" H 5100 5500 50  0001 C CNN
+	1    5100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C206
+U 1 1 5F2F816C
+P 5550 5500
+AR Path="/5F1526C5/5F2F816C" Ref="C206"  Part="1" 
+AR Path="/5F160F98/5F2F816C" Ref="C203"  Part="1" 
+F 0 "C206" H 5665 5546 50  0000 L CNN
+F 1 "4.7u" H 5665 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5588 5350 50  0001 C CNN
+F 3 "~" H 5550 5500 50  0001 C CNN
+	1    5550 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5300 5550 5350
+Wire Wire Line
+	5550 5700 5550 5650
+Text Label 3100 3400 0    50   ~ 0
+A1
+Text Label 3100 3550 0    50   ~ 0
+A0
+Text HLabel 3100 3400 0    50   BiDi ~ 0
+A1
+Text HLabel 3100 3550 0    50   BiDi ~ 0
+A0
+$Comp
+L Device:C C207
+U 1 1 61566B29
+P 6000 5500
+AR Path="/5F1526C5/61566B29" Ref="C207"  Part="1" 
+AR Path="/5F160F98/61566B29" Ref="C204"  Part="1" 
+F 0 "C207" H 6115 5546 50  0000 L CNN
+F 1 "4.7u" H 6115 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6038 5350 50  0001 C CNN
+F 3 "~" H 6000 5500 50  0001 C CNN
+	1    6000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5300 6000 5300
+Wire Wire Line
+	6000 5300 6000 5350
+Connection ~ 5550 5300
+Wire Wire Line
+	5550 5700 6000 5700
+Wire Wire Line
+	6000 5700 6000 5650
+Connection ~ 5550 5700
+Wire Wire Line
+	5100 5250 5100 5300
+Wire Wire Line
+	5100 5650 5100 5700
+Wire Wire Line
+	5100 5300 5550 5300
+Connection ~ 5100 5300
+Wire Wire Line
+	5100 5300 5100 5350
+Wire Wire Line
+	5100 5700 5550 5700
+Connection ~ 5100 5700
+Wire Wire Line
+	5100 5700 5100 5750
+$EndSCHEMATC

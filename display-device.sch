@@ -1,0 +1,122 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 38
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4250 3075 0    50   BiDi ~ 0
+SCL
+Text HLabel 4250 3175 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	4250 3075 4400 3075
+Wire Wire Line
+	4250 3175 4400 3175
+Wire Wire Line
+	4400 3375 4100 3375
+Wire Wire Line
+	4400 3475 4100 3475
+Wire Wire Line
+	4400 3575 4100 3575
+Text Label 4100 3375 0    50   ~ 0
+A0
+Text Label 4100 3475 0    50   ~ 0
+A1
+Text Label 4100 3575 0    50   ~ 0
+A2
+Text HLabel 4100 3375 0    50   BiDi ~ 0
+A0
+Text HLabel 4100 3475 0    50   BiDi ~ 0
+A1
+Text HLabel 4100 3575 0    50   BiDi ~ 0
+A2
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J11
+U 1 1 6214B3C5
+P 4600 3275
+F 0 "J11" H 4650 3600 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 4650 3601 50  0001 C CNN
+F 2 "footprints:JST_PUD_B12B-PUDSS_2x06x2.00mm_Straight" H 4600 3275 50  0001 C CNN
+F 3 "~" H 4600 3275 50  0001 C CNN
+	1    4600 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3275 3875 3275
+Wire Wire Line
+	3875 3275 3875 3675
+$Comp
+L power:GND #PWR0223
+U 1 1 6214D986
+P 3875 3675
+F 0 "#PWR0223" H 3875 3425 50  0001 C CNN
+F 1 "GND" H 3880 3502 50  0000 C CNN
+F 2 "" H 3875 3675 50  0001 C CNN
+F 3 "" H 3875 3675 50  0001 C CNN
+	1    3875 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0226
+U 1 1 6214DDAA
+P 5325 3625
+F 0 "#PWR0226" H 5325 3375 50  0001 C CNN
+F 1 "GND" H 5330 3452 50  0000 C CNN
+F 2 "" H 5325 3625 50  0001 C CNN
+F 3 "" H 5325 3625 50  0001 C CNN
+	1    5325 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0224
+U 1 1 6214E5E1
+P 5125 3075
+F 0 "#PWR0224" H 5125 2925 50  0001 C CNN
+F 1 "+3V3" H 5140 3248 50  0000 C CNN
+F 2 "" H 5125 3075 50  0001 C CNN
+F 3 "" H 5125 3075 50  0001 C CNN
+	1    5125 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3075 5125 3075
+Wire Wire Line
+	4900 3175 5125 3175
+Wire Wire Line
+	5125 3175 5125 3075
+Connection ~ 5125 3075
+$Comp
+L power:+5V #PWR0225
+U 1 1 6214F10C
+P 5125 3475
+F 0 "#PWR0225" H 5125 3325 50  0001 C CNN
+F 1 "+5V" H 5140 3648 50  0000 C CNN
+F 2 "" H 5125 3475 50  0001 C CNN
+F 3 "" H 5125 3475 50  0001 C CNN
+	1    5125 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3475 5125 3475
+Wire Wire Line
+	5125 3575 5125 3475
+Wire Wire Line
+	4900 3575 5125 3575
+Connection ~ 5125 3475
+Wire Wire Line
+	4900 3275 5325 3275
+Wire Wire Line
+	5325 3275 5325 3625
+Wire Wire Line
+	4900 3375 4900 3275
+Connection ~ 4900 3275
+$EndSCHEMATC
